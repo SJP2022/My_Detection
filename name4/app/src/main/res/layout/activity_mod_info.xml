@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mod_info"
+    android:background="@color/mi">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="5.5"
+        android:background="@color/mi"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/et"
+        android:textSize="20sp"
+        android:textColor="#828282"
+        app:layout_constraintVertical_weight="3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ll2"
+        app:layout_constraintTop_toBottomOf="@+id/lc" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintVertical_weight="4"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/ll2"-->
+<!--        android:id="@+id/ll1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/add_img"-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1.5"-->
+<!--            android:background="#FFFFFF"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:src="@drawable/add_icon" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/add_nongdu"-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="Input_the_nongdu"-->
+<!--            android:textAlignment="center"-->
+<!--            android:background="#8FE6E6"-->
+<!--            android:inputType="numberDecimal" />-->
+
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:orientation="horizontal"
+        android:id="@+id/ll2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            style="@style/btn"
+            android:textSize="25sp"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_share"-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#FFFFFF"-->
+<!--            android:text="share"-->
+<!--            android:layout_marginRight="3dp"-->
+<!--            android:layout_marginTop="6dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:layout_marginLeft="3dp"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/btn_predict"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/predict"
+            style="@style/btn"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

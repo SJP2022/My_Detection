@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">我的检测</string>
+    <string name="cancel">返 回</string>
+    <string name="add">添 加</string>
+    <string name="calculate">拟 合</string>
+    <string name="input_name">请输入模型的名称</string>
+    <string name="create_model">创 建 模 型</string>
+    <string name="model_list">模 型 列 表</string>
+    <string name="predict">预 测</string>
+    <string name="ok">确 定</string>
+    <string name="share">分 享</string>
+</resources>
